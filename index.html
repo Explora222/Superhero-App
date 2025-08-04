@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marvel Superheroes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <h1>Marvel Superhero Squad</h1>
+  </header>
+
+  <main>
+    <section class="heroes">
+      <div class="hero-card" data-hero="Spiderman">
+        <img src="spiderman.jpeg" alt="Spiderman">
+        <h2>Spiderman</h2>
+      </div>
+      <div class="hero-card" data-hero="Wonder Woman">
+        <img src="wonder-woman.jpeg" alt="Wonder Woman">
+        <h2>Wonder Woman</h2>
+      </div>
+      <div class="hero-card" data-hero="Captain America">
+        <img src="captain-america.jpeg" alt="Captain America">
+        <h2>Captain America</h2>
+      </div>
+      <div class="hero-card" data-hero="Iron Man">
+        <img src="iron-man.jpeg" alt="Iron Man">
+        <h2>Iron Man</h2>
+      </div>
+      <div class="hero-card" data-hero="Captain Marvel">
+        <img src="captain-marvel.jpeg" alt="Captain Marvel">
+        <h2>Captain Marvel</h2>
+      </div>
+      <div class="hero-card" data-hero="Black Panther">
+        <img src="black-panther.jpeg" alt="Black Panther">
+        <h2>Black Panther</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Website by Shumani Monyai © 2025</p>
+  </footer>
+
+  <!-- Background music -->
+  <audio id="bg-music" src="marvel-theme.mp3" autoplay loop></audio>
+
+  <!-- Hero Info Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-btn">&times;</span>
+      <h2 id="hero-name"></h2>
+      <p id="hero-info">Loading...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
